@@ -4,7 +4,7 @@
     "description": "www.bootcdn.cn quick pick",
     "version": "1.0.0",
     "publisher": "YoRolling",
-    "icon": "./bootcdn.png",
+    "icon": "images/bootcdn.png",
     "repository": "https://github.com/YoRolling/vscode-bootcdn",
     "engines": {
         "vscode": "^1.22.0"

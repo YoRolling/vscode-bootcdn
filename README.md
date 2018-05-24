@@ -1,4 +1,5 @@
-# BootCDN README
+![logo](./images/bootcdn.png)
+
 
 ## Features
 
@@ -24,5 +25,5 @@ Calling out known issues can help limit users opening duplicate issues against y
 Initial release of `BootCDN`
 
 -----------------------------------------------------------------------------------------------------------
-
+ 
 **Enjoy!**
