@@ -1,0 +1,52 @@
+{
+    "name": "bootcdn",
+    "displayName": "bootcdn",
+    "description": "www.bootcdn.cn quick pick",
+    "version": "1.0.0",
+    "publisher": "YoRolling",
+    "icon": "./bootcdn.png",
+    "repository": "https://github.com/YoRolling/vscode-bootcdn",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:html"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.search",
+                "title": "Search for libraries",
+                "category": "bootcdn"
+            },
+            {
+                "command": "extension.clean",
+                "title": "clean cache",
+                "category": "bootcdn"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "request": "^2.86.0",
+        "request-promise-native": "^1.0.5",
+        "vscode-cache": "^0.3.0"
+    }
+}
